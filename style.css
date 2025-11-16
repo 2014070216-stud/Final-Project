@@ -1,0 +1,192 @@
+.container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.container td { vertical-align: middle; padding: 6px 6px; }
+.container td:first-child { width: 30%; padding-right: 6px; text-align: left; }
+.container td:nth-child(2) { width: 3%; text-align: center; padding: 6px 4px; }
+.container td:nth-child(3) { width: 67%; }
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"] {
+    width: 100%;
+    padding: 8px 10px; /* slightly smaller so controls look tighter */
+    border: 1px solid #ccd6e3;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.form-row{
+    display: flex; 
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+.form-row label{
+    flex: 0 0 40%;
+    text-align: left;
+    font-weight: 600;
+}
+.form-row input{
+    flex: 1 1 auto;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 0 64px 0;
+    line-height: 1.6;
+}
+nav {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.hero {
+    display: flex;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+.hero .text {
+    flex: 1;
+    padding-right: 20px;
+}
+.hero .text h1 {
+    color: #003366;
+}
+.hero .image {
+    flex: 1;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+.history {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+.history h2 { 
+    color: #003366;
+    text-align: center;
+}
+.photos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.photos .person {
+    text-align: center;
+}
+.photos img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 12px 20px; /* slightly smaller footer */
+    position: fixed; /* keep footer stuck to bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    /* Set a minimum height so we can reserve the same space on the body */
+    min-height: 40px;
+}
+
+/* Mobile: footer may be taller (touch targets); increase bottom padding to avoid overlap */
+@media (max-width: 600px) {
+    body { padding-bottom: 90px; }
+    footer { padding: 14px 16px; min-height: 48px; }
+}
+
+/* Small helper for contact card */
+.contact-card{
+    max-width: 760px;
+    margin: 0 auto;
+    background: #f7f9fc;
+    padding: 18px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.plane-photos {
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plane-box {
+    width: 260px;
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.plane-box .name-box {
+    width: 100%;
+    padding: 8px 10px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.55));
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.plane-777 {
+    background-image: url('777.jpeg');
+    background-position: right center; /* keep right side visible */
+    background-size: contain; /* show whole image (no cropping) */
+    background-repeat: no-repeat;
+    background-color: #e9eef6; /* neutral background to fill space if needed */
+}
+
+.nav-right { display:flex; gap:12px; align-items:center; }
+.nav-input-form { display:flex; gap:8px; align-items:center; }
+.nav-input-form input[type="text"]{ padding:6px 8px; border-radius:6px; border:1px solid #ccd6e3; }
+.nav-input-form button{ padding:6px 10px; border-radius:6px; background:#0066cc; color:#fff; border:none; cursor:pointer; }
+.nav-show-badge{ background:#f1f5f9; padding:6px 10px; border-radius:6px; color:#003366; font-weight:600; }
+.main-area{ padding:28px 20px; max-width:920px; margin: 20px auto; }
+.result-box{ background:#f7f9fc; padding:16px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.04);} 
+
+.form_input_data_flight {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccd6e3;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
